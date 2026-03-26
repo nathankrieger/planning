@@ -6,6 +6,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_compile_options(-Wall -Wextra)
 
+file(MAKE_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/results")
+
 # Core Library Setup
 file(GLOB SRC_FILES "src/*.cpp")
 list(REMOVE_ITEM SRC_FILES "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp")

@@ -16,3 +16,6 @@ examples:
 
 clean clear:
 	rm -rf build
+
+clean-results:
+	rm -rf results/*.json
